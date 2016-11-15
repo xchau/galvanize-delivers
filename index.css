@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+  flex: 1 0 auto;
+}
+
+/*img {
+  width: 100%;
+}*/
+
+#hero-image {
+  background-image: url('img/hero.jpg');
+  height: 400px;
+}
+
+#button {
+  height: 40px;
+}
+
+/*#nav {
+  display: flex;
+  justify-content: s
+}*/
+
+h1 {
+  font-size: 75px;
+  font-weight: 500;
+}
+
+.margin-left {
+  margin-left: 20px;
+}
+
+.margin-right {
+  margin-right: 20px;
+}
