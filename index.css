@@ -14,27 +14,31 @@ main {
 
 #hero-image {
   background-image: url('img/hero.jpg');
-  height: 400px;
+  background-size: cover;
+  height: 450px;
+  /*background-attachment: fixed; parallax
+  background-position: center;
+  background-repeat: no-repeat;*/
 }
 
 #button {
   height: 40px;
 }
 
-/*#nav {
-  display: flex;
-  justify-content: s
-}*/
-
-h1 {
-  font-size: 75px;
+#tagline {
+  font-size: 7vw;
   font-weight: 500;
 }
 
-.margin-left {
+.brand-logo, .button-collapse {
   margin-left: 20px;
 }
 
 .margin-right {
   margin-right: 20px;
+  padding: 0 10px;
 }
+
+/*i {
+  vertical-align: bottom;
+}*/

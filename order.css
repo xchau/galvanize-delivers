@@ -1,0 +1,39 @@
+th {
+  font-size: 18px;
+}
+
+td {
+  font-size: 16px;
+}
+
+.brand-logo, .button-collapse {
+  margin-left: 20px;
+}
+
+.margin-right {
+  margin-right: 20px;
+  padding: 0 10px;
+}
+
+.big-icon {
+  font-size: 40px;
+}
+
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #ed5e93;
+     box-shadow: 0 1px 0 0 #ed5e93;
+}
+
+.input-field .prefix.active {
+     color: #ed5e93;
+}
+
+/* label color */
+.input-field label {
+ color: #c3c3c3;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: #ed5e93;
+}
