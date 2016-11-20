@@ -6,11 +6,11 @@
     <title>Orders</title>
     <script defer src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script defer src="js/materialize.js"></script>
-    <script defer src="index.js"></script>
+    <script defer src="js/order.js"></script>
 
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="css/order.css">
   </head>
 
   <body>
@@ -23,7 +23,7 @@
             <i class="material-icons">menu</i>
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="margin-right active waves-effect"><a href="order.html">Order Delivery</a></li>
+            <li class="margin-right active"><a href="order.html" class="waves-effect">Order Delivery</a></li>
           </ul>
           <ul id="menu" class="side-nav">
             <li><a href="#">Order Delivery</a></li>
@@ -37,7 +37,7 @@
       <div class="container">
 
         <div class="row">
-          <div class="col s12 m6">
+          <div id="allButtonsDiv" class="col s12 m6">
             <h4>Menu</h4>
             <div class="row">
               <div class="col s12 m6">
@@ -50,7 +50,7 @@
                     <p>$8.99</p>
                   </div>
                   <div class="card-action">
-                    <a href="#" class="pink-text">ADD TO ORDER</a>
+                    <a id="royale" href="#" class="order-link pink-text">ADD TO ORDER</a>
                   </div>
                 </div>
               </div>
@@ -64,7 +64,7 @@
                     <p>$11.99</p>
                   </div>
                   <div class="card-action">
-                    <a href="#" class="pink-text">ADD TO ORDER</a>
+                    <a href="#" class="order-link pink-text">ADD TO ORDER</a>
                   </div>
                 </div>
               </div>
@@ -80,7 +80,7 @@
                     <p>$14.99</p>
                   </div>
                   <div class="card-action">
-                    <a href="#" class="pink-text">ADD TO ORDER</a>
+                    <a href="#" class="order-link pink-text">ADD TO ORDER</a>
                   </div>
                 </div>
               </div>
@@ -94,7 +94,7 @@
                     <p>$7.99</p>
                   </div>
                   <div class="card-action">
-                    <a href="#" class="pink-text">ADD TO ORDER</a>
+                    <a href="#" class="order-link pink-text">ADD TO ORDER</a>
                   </div>
                 </div>
               </div>
@@ -102,43 +102,31 @@
           </div>
           <div class="col s12 m6">
             <h4>Order</h4>
-            <table class="bordered striped">
+            <table id="orders" class="bordered striped">
               <thead>
                 <tr>
-                  <th data-field="name">Item</th>
-                  <th data-field="price" class="right">Price</th>
+                  <th data-field="name" class="left-align">Item</th>
+                  <th data-field="quanity" class="center-align">Quantity</th>
+                  <th data-field="price" class="right-align">Price</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Placeholder 1</td>
-                  <td class="right">$10.99</td>
-                </tr>
-                <tr>
-                  <td>Placeholder 2</td>
-                  <td class="right">$9.99</td>
-                </tr>
-                <tr>
-                  <td>Placeholder 3</td>
-                  <td class="right">$21.99</td>
-                </tr>
-                <tr>
-                  <td>Placeholder 4</td>
-                  <td class="right">$15.99</td>
-                </tr>
               </tbody>
               <tfoot>
                 <tr>
+                  <td></td>
                   <td class="right-align"> Subtotal</td>
-                  <td class="right-align">$172.23</td>
+                  <td id="subtotal" class="right-align">$0.00</td>
                 </tr>
                 <tr>
+                  <td></td>
                   <td class="right-align"> Tax</td>
-                  <td class="right-align">$9.43</td>
+                  <td id="tax" class="right-align">$0.00</td>
                 </tr>
                 <tr>
+                  <td></td>
                   <td class="right-align"> Total</td>
-                  <td class="right-align">$239.93</td>
+                  <td id="total" class="right-align">$0.00</td>
                 </tr>
               </tfoot>
             </table>
@@ -168,7 +156,7 @@
                     <label for="address">Address</label>
                   </div>
                 </div>
-                
+
                 <div class="row center-align">
                   <a href="#" class="waves-effect waves-light btn-large #ec407a pink lighten-1">PLACE ORDER</a>
                 </div>
