@@ -159,7 +159,7 @@
   const nameRegEx = /([a-zA-Z-]+)( )([a-zA-Z-]+)/g;
   const phoneRegEx = /[0-9-().# ]/g;
   const addressRegEx = /[a-zA-Z0-9-#. ]/g;
-  const nameWarning = 'Only alphabet characters allowed';
+  const nameWarning = 'Numbers and symbols (@#$) not allowed)';
   const phoneWarning = 'Enter a valid phone number';
   const addressWarning = 'Enter a valid address';
 
