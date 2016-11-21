@@ -157,7 +157,7 @@
   // VALIDATE TEMPLATE ON SUBMISSION
   const $form = $('#user-info-form');
   const nameRegEx = /([a-zA-Z-]+)( )([a-zA-Z-]+)/g;
-  const phoneRegEx = /[0-9-().# ]/g;
+  const phoneRegEx = /(\(?\d\d\d\)?)(-? ?\.?)([0-9]){3}(-? ?\.?)([0-9]){4}/g;
   const addressRegEx = /[a-zA-Z0-9-#. ]/g;
   const nameWarning = 'Please enter a valid name!';
   const phoneWarning = 'Please enter a valid phone number!';
