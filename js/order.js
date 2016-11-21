@@ -159,9 +159,9 @@
   const nameRegEx = /([a-zA-Z-]+)( )([a-zA-Z-]+)/g;
   const phoneRegEx = /[0-9-().# ]/g;
   const addressRegEx = /[a-zA-Z0-9-#. ]/g;
-  const nameWarning = 'Numbers and symbols (@#$) not allowed)';
-  const phoneWarning = 'Enter a valid phone number';
-  const addressWarning = 'Enter a valid address';
+  const nameWarning = 'Please enter a valid name!';
+  const phoneWarning = 'Please enter a valid phone number!';
+  const addressWarning = 'Please enter a valid address!';
 
   $form.submit((event) => {
     event.preventDefault();
