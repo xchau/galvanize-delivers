@@ -19,13 +19,18 @@ td {
   font-size: 40px;
 }
 
+.invalid {
+  color: rgba(45, 45, 45, 0.5);
+}
+
+/* Materialize CSS */
 .input-field input[type=text]:focus {
-     border-bottom: 1px solid #ed5e93;
-     box-shadow: 0 1px 0 0 #ed5e93;
+ border-bottom: 1px solid #ed5e93;
+ box-shadow: 0 1px 0 0 #ed5e93;
 }
 
 .input-field .prefix.active {
-     color: #ed5e93;
+   color: #ed5e93;
 }
 
 /* label color */
@@ -36,4 +41,20 @@ td {
 /* label focus color */
 .input-field input[type=text]:focus + label {
  color: #ed5e93;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #e91e63;
+}
+
+/* textarea label focus color */
+textarea.materialize-textarea:focus:not([readonly])+label {
+  color: #e91e63;
+}
+
+/* textarea underline focus color */
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #e91e63;
+  box-shadow: 0 1px 0 0 #e91e63;
 }

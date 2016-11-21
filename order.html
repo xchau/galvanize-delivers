@@ -130,41 +130,46 @@
                 </tr>
               </tfoot>
             </table>
-            <div class="row">
-              <form class="col s12">
+            <form id="user-info-form" class="col s12">
 
-                <div class="row">
-                  <div class="input-field col s12">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="name" type="text">
-                    <label for="name">Name</label>
-                  </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="name" type="text">
+                  <label id="name-label" for="name">
+                    Name
+                  </label>
                 </div>
+              </div>
 
-                <div class="row">
-                  <div class="input-field col s12">
-                    <i class="material-icons prefix">phone</i>
-                    <input id="phoneNumber" type="text">
-                    <label for="phoneNumber">Phone Number</label>
-                  </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="phoneNumber" type="text">
+                  <label for="phoneNumber">
+                    Phone Number
+                  </label>
                 </div>
+              </div>
 
-                <div class="row">
-                  <div class="input-field col s12">
-                    <i class="material-icons prefix">business</i>
-                    <textarea id="address" class="materialize-textarea"></textarea>
-                    <label for="address">Address</label>
-                  </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">business</i>
+                  <textarea id="address" class="materialize-textarea"></textarea>
+                  <label for="address">
+                    Address
+                  </label>
                 </div>
+              </div>
 
-                <div class="row center-align">
-                  <a href="#" class="waves-effect waves-light btn-large #ec407a pink lighten-1">PLACE ORDER</a>
-                </div>
+              <div class="row center-align">
+                <button id="placeOrder" class="waves-effect waves-light btn-large #ec407a pink lighten-1">
+                  PLACE ORDER
+                </button>
               </div>
             </div>
           </form>
         </div>
-
     </main>
 
     <footer class="page-footer #1565c0 blue darken-3">
